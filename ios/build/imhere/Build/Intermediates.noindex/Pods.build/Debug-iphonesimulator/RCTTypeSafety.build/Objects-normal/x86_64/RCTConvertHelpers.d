@@ -1,29 +1,29 @@
 dependencies: \
-  /Users/shimizuryouta/workspace/imhere/node_modules/react-native/Libraries/TypeSafety/RCTConvertHelpers.mm \
-  /Users/shimizuryouta/workspace/imhere/ios/Pods/Target\ Support\ Files/RCTTypeSafety/RCTTypeSafety-prefix.pch \
-  /Users/shimizuryouta/workspace/imhere/node_modules/react-native/Libraries/TypeSafety/RCTConvertHelpers.h \
-  /Users/shimizuryouta/workspace/imhere/ios/Pods/Headers/Public/FBLazyVector/FBLazyVector/FBLazyVector.h \
-  /Users/shimizuryouta/workspace/imhere/ios/Pods/Headers/Public/FBLazyVector/FBLazyVector/FBLazyIterator.h \
-  /Users/shimizuryouta/workspace/imhere/ios/Pods/Folly/folly/Optional.h \
-  /Users/shimizuryouta/workspace/imhere/ios/Pods/Folly/folly/Portability.h \
-  /Users/shimizuryouta/workspace/imhere/ios/Pods/Folly/folly/portability/Config.h \
-  /Users/shimizuryouta/workspace/imhere/ios/Pods/Folly/folly/CPortability.h \
-  /Users/shimizuryouta/workspace/imhere/ios/Pods/Folly/folly/Traits.h \
-  /Users/shimizuryouta/workspace/imhere/ios/Pods/Folly/folly/Utility.h \
-  /Users/shimizuryouta/workspace/imhere/ios/Pods/Folly/folly/lang/Exception.h \
-  /Users/shimizuryouta/workspace/imhere/ios/Pods/Folly/folly/CppAttributes.h \
-  /Users/shimizuryouta/workspace/imhere/ios/Pods/Headers/Public/React-Core/React/RCTConvert.h \
-  /Users/shimizuryouta/workspace/imhere/ios/Pods/Headers/Public/React-Core/React/RCTAnimationType.h \
-  /Users/shimizuryouta/workspace/imhere/ios/Pods/Headers/Public/React-Core/React/RCTBorderStyle.h \
-  /Users/shimizuryouta/workspace/imhere/ios/Pods/Headers/Public/React-Core/React/RCTDefines.h \
-  /Users/shimizuryouta/workspace/imhere/ios/Pods/Headers/Public/React-Core/React/RCTInspectorDevServerHelper.h \
-  /Users/shimizuryouta/workspace/imhere/ios/Pods/Headers/Public/React-Core/React/RCTPackagerConnection.h \
-  /Users/shimizuryouta/workspace/imhere/ios/Pods/Headers/Public/React-Core/React/RCTLog.h \
-  /Users/shimizuryouta/workspace/imhere/ios/Pods/Headers/Public/React-Core/React/RCTAssert.h \
-  /Users/shimizuryouta/workspace/imhere/ios/Pods/Headers/Public/React-Core/React/RCTUtils.h \
-  /Users/shimizuryouta/workspace/imhere/ios/Pods/Headers/Public/React-Core/React/RCTPointerEvents.h \
-  /Users/shimizuryouta/workspace/imhere/ios/Pods/Headers/Public/React-Core/React/RCTTextDecorationLineType.h \
-  /Users/shimizuryouta/workspace/imhere/ios/Pods/Headers/Public/Yoga/yoga/Yoga.h \
-  /Users/shimizuryouta/workspace/imhere/ios/Pods/Headers/Public/Yoga/yoga/YGEnums.h \
-  /Users/shimizuryouta/workspace/imhere/ios/Pods/Headers/Public/Yoga/yoga/YGMacros.h \
-  /Users/shimizuryouta/workspace/imhere/ios/Pods/Headers/Public/Yoga/yoga/YGValue.h
+  /Users/shimizuryouta/workspace/imhere-app/node_modules/react-native/Libraries/TypeSafety/RCTConvertHelpers.mm \
+  /Users/shimizuryouta/workspace/imhere-app/ios/Pods/Target\ Support\ Files/RCTTypeSafety/RCTTypeSafety-prefix.pch \
+  /Users/shimizuryouta/workspace/imhere-app/node_modules/react-native/Libraries/TypeSafety/RCTConvertHelpers.h \
+  /Users/shimizuryouta/workspace/imhere-app/ios/Pods/Headers/Public/FBLazyVector/FBLazyVector/FBLazyVector.h \
+  /Users/shimizuryouta/workspace/imhere-app/ios/Pods/Headers/Public/FBLazyVector/FBLazyVector/FBLazyIterator.h \
+  /Users/shimizuryouta/workspace/imhere-app/ios/Pods/Folly/folly/Optional.h \
+  /Users/shimizuryouta/workspace/imhere-app/ios/Pods/Folly/folly/Portability.h \
+  /Users/shimizuryouta/workspace/imhere-app/ios/Pods/Folly/folly/portability/Config.h \
+  /Users/shimizuryouta/workspace/imhere-app/ios/Pods/Folly/folly/CPortability.h \
+  /Users/shimizuryouta/workspace/imhere-app/ios/Pods/Folly/folly/Traits.h \
+  /Users/shimizuryouta/workspace/imhere-app/ios/Pods/Folly/folly/Utility.h \
+  /Users/shimizuryouta/workspace/imhere-app/ios/Pods/Folly/folly/lang/Exception.h \
+  /Users/shimizuryouta/workspace/imhere-app/ios/Pods/Folly/folly/CppAttributes.h \
+  /Users/shimizuryouta/workspace/imhere-app/ios/Pods/Headers/Public/React-Core/React/RCTConvert.h \
+  /Users/shimizuryouta/workspace/imhere-app/ios/Pods/Headers/Public/React-Core/React/RCTAnimationType.h \
+  /Users/shimizuryouta/workspace/imhere-app/ios/Pods/Headers/Public/React-Core/React/RCTBorderStyle.h \
+  /Users/shimizuryouta/workspace/imhere-app/ios/Pods/Headers/Public/React-Core/React/RCTDefines.h \
+  /Users/shimizuryouta/workspace/imhere-app/ios/Pods/Headers/Public/React-Core/React/RCTInspectorDevServerHelper.h \
+  /Users/shimizuryouta/workspace/imhere-app/ios/Pods/Headers/Public/React-Core/React/RCTPackagerConnection.h \
+  /Users/shimizuryouta/workspace/imhere-app/ios/Pods/Headers/Public/React-Core/React/RCTLog.h \
+  /Users/shimizuryouta/workspace/imhere-app/ios/Pods/Headers/Public/React-Core/React/RCTAssert.h \
+  /Users/shimizuryouta/workspace/imhere-app/ios/Pods/Headers/Public/React-Core/React/RCTUtils.h \
+  /Users/shimizuryouta/workspace/imhere-app/ios/Pods/Headers/Public/React-Core/React/RCTPointerEvents.h \
+  /Users/shimizuryouta/workspace/imhere-app/ios/Pods/Headers/Public/React-Core/React/RCTTextDecorationLineType.h \
+  /Users/shimizuryouta/workspace/imhere-app/ios/Pods/Headers/Public/Yoga/yoga/Yoga.h \
+  /Users/shimizuryouta/workspace/imhere-app/ios/Pods/Headers/Public/Yoga/yoga/YGEnums.h \
+  /Users/shimizuryouta/workspace/imhere-app/ios/Pods/Headers/Public/Yoga/yoga/YGMacros.h \
+  /Users/shimizuryouta/workspace/imhere-app/ios/Pods/Headers/Public/Yoga/yoga/YGValue.h
