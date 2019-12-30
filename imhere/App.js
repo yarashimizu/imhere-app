@@ -7,36 +7,27 @@
  */
 
 import React, {Component} from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-  PermissionsAndroid,
-} from "react-native";
-import firebase from "firebase";
-import MapView from "react-native-maps";
-import { Provider } from "react-redux";
-import { createStore, applyMiddleware } from "redux";
-import ReduxThunk from "redux-thunk";
+import {View, Text} from 'react-native';
+import firebase from 'firebase';
+// import MapView from 'react-native-maps';
+import {Provider} from 'react-redux';
+import {createStore, applyMiddleware} from 'redux';
+import ReduxThunk from 'redux-thunk';
 
-
-import reducers from "./src/reducers";
-import LoginForm from "./src/LoginForm";
+import reducers from './src/reducers';
+import LoginForm from './src/LoginForm';
 
 // メイン処理
 class App extends Component {
   componentWillMount() {
     // firebaseの設定
     const config = {
-      apiKey: "AIzaSyByWIOX_4Lv8D4zmBCgQw-vFxLm3Evq6To",
-      authDomain: "imhere-app-0811.firebaseapp.com",
-      databaseURL: "https://imhere-app-0811.firebaseio.com",
-      projectId: "imhere-app-0811",
-      storageBucket: "imhere-app-0811.appspot.com",
-      messagingSenderId: "21057990366",
+      apiKey: 'AIzaSyByWIOX_4Lv8D4zmBCgQw-vFxLm3Evq6To',
+      authDomain: 'imhere-app-0811.firebaseapp.com',
+      databaseURL: 'https://imhere-app-0811.firebaseio.com',
+      projectId: 'imhere-app-0811',
+      storageBucket: 'imhere-app-0811.appspot.com',
+      messagingSenderId: '21057990366',
     };
     firebase.initializeApp(config);
   }
@@ -47,7 +38,9 @@ class App extends Component {
     return (
       <Provider store={createStore(reducers, {}, applyMiddleware(ReduxThunk))}>
         <View style={{flex: 1}}>
-          <View style={styles.header}><Text style={styles.headerText}>ログインフォーム</Text></View>
+          <View style={styles.header}>
+            <Text style={styles.headerText}>ログインフォーム</Text>
+          </View>
           <LoginForm />
         </View>
       </Provider>
@@ -68,7 +61,7 @@ class App extends Component {
     </>
   );
   */
-};
+}
 
 const styles = {
   header: {
@@ -78,12 +71,12 @@ const styles = {
     height: 90,
     paddingTop: 15,
     elevation: 2,
-    position: 'relative'
+    position: 'relative',
   },
   headerText: {
     fontSize: 20,
-    fontWeight: '600'
-  }
+    fontWeight: '600',
+  },
 };
 
 /* // mapを表示するためのスタイルシート

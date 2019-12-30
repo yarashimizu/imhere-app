@@ -1,67 +1,68 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { View, TouchableOpacity, Text, TextInput, ActivityIndicator } from 'react-native';
-import firebase from 'firebase';
-import { changeEmail, changePassword, submitLogin } from './actions';
- 
+import React, {Component} from 'react';
+import {connect} from 'react-redux';
+import {
+  View,
+  TouchableOpacity,
+  Text,
+  TextInput,
+  ActivityIndicator,
+} from 'react-native';
+import {changeEmail, changePassword, submitLogin} from './actions';
+
 class LoginForm extends Component {
   onButtonPress() {
-    const { email, password } = this.props;
-    this.props.submitLogin({ email, password });
+    const {email, password} = this.props;
+    this.props.submitLogin({email, password});
   }
- 
+
   loadSpinner() {
     if (this.props.loading) {
-      return <ActivityIndicator size="small" />
+      return <ActivityIndicator size="small" />;
     }
- 
+
     return (
-      <TouchableOpacity onPress={this.onButtonPress.bind(this)} style={styles.buttonStyle}>
-        <Text style={styles.textStyle}>
-          ログイン
-        </Text>
+      <TouchableOpacity
+        onPress={this.onButtonPress.bind(this)}
+        style={styles.buttonStyle}>
+        <Text style={styles.textStyle}>ログイン</Text>
       </TouchableOpacity>
-    )
+    );
   }
- 
+
   render() {
     return (
       <View>
         <View style={styles.wrap}>
           <TextInput
-              placeholder="user@gmail.com"
-              autoCorrect={false}
-              value={this.props.email}
-              onChangeText={email => this.props.changeEmail(email)}
-              style={styles.inputStyle}
-            />
+            placeholder="user@gmail.com"
+            autoCorrect={false}
+            value={this.props.email}
+            onChangeText={email => this.props.changeEmail(email)}
+            style={styles.inputStyle}
+          />
         </View>
         <View style={styles.wrap}>
           <TextInput
-              secureTextEntry
-              placeholder="password"
-              autoCorrect={false}
-              value={this.props.password}
-              onChangeText={password => this.props.changePassword(password)}
-              style={styles.inputStyle}
-            />
+            secureTextEntry
+            placeholder="password"
+            autoCorrect={false}
+            value={this.props.password}
+            onChangeText={password => this.props.changePassword(password)}
+            style={styles.inputStyle}
+          />
         </View>
- 
-        <View style={styles.wrap}>
-          {this.loadSpinner()}
-        </View>
- 
-        <Text>
-          {this.props.loggedIn}
-        </Text>
+
+        <View style={styles.wrap}>{this.loadSpinner()}</View>
+
+        <Text>{this.props.loggedIn}</Text>
       </View>
-    )
+    );
   }
 }
- 
+
 const styles = {
   wrap: {
-    padding: 10
+    padding: 10,
   },
   textStyle: {
     alignSelf: 'center',
@@ -69,14 +70,14 @@ const styles = {
     fontSize: 16,
     fontWeight: '600',
     paddingBottom: 10,
-    paddingTop: 10
+    paddingTop: 10,
   },
   buttonStyle: {
     alignSelf: 'stretch',
     backgroundColor: '#fff',
     borderRadius: 5,
     borderWidth: 1,
-    borderColor: '#007aff'
+    borderColor: '#007aff',
   },
   inputStyle: {
     color: '#000',
@@ -86,17 +87,21 @@ const styles = {
     lineHeight: 23,
     height: 30,
     borderWidth: 1,
-    borderColor: '#333'
-  }
-}
- 
+    borderColor: '#333',
+  },
+};
+
 const mapStateToProps = state => {
   return {
     email: state.auth.email,
     password: state.auth.password,
     loading: state.auth.loading,
-    loggedIn: state.auth.loggedIn
-  }
-}
- 
-export default connect(mapStateToProps ,{ changeEmail, changePassword, submitLogin })(LoginForm);
+    loggedIn: state.auth.loggedIn,
+  };
+};
+
+export default connect(mapStateToProps, {
+  changeEmail,
+  changePassword,
+  submitLogin,
+})(LoginForm);
