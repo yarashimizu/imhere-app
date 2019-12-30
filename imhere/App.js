@@ -40,6 +40,9 @@ class App extends Component {
     };
     firebase.initializeApp(config);
   }
+
+  // 描画処理
+  // ログインフォームに直つなぎから、ルーターを利用したアクセスに変更する
   render() {
     return (
       <Provider store={createStore(reducers, {}, applyMiddleware(ReduxThunk))}>
