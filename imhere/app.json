@@ -1,4 +1,9 @@
 {
   "name": "imhere",
-  "displayName": "imhere"
+  "displayName": "imhere",
+  "android": {
+    "config": {
+      "googleMaps.apiKey": "AIzaSyByWIOX_4Lv8D4zmBCgQw-vFxLm3Evq6To"
+    }
+  }
 }
