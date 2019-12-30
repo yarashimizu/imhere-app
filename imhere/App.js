@@ -72,7 +72,7 @@ const styles = {
     backgroundColor: '#F8F8F8',
     justifyContent: 'center',
     alignItems: 'center',
-    height: 60,
+    height: 90,
     paddingTop: 15,
     elevation: 2,
     position: 'relative'
