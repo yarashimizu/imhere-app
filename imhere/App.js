@@ -16,6 +16,7 @@ import ReduxThunk from 'redux-thunk';
 
 import reducers from './src/reducers';
 import LoginForm from './src/LoginForm';
+import Singup from './src/Singup';
 
 // メイン処理
 class App extends Component {
@@ -41,7 +42,7 @@ class App extends Component {
           <View style={styles.header}>
             <Text style={styles.headerText}>ログインフォーム</Text>
           </View>
-          <LoginForm />
+          <Singup />
         </View>
       </Provider>
     );

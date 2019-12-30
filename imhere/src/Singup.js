@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import {View, Text, TextInput} from 'react-native';
+import {View, Text, TextInput, Button} from 'react-native';
 
 import {signup} from './firebase';
 
 // ユーザー登録画面
-class Login extends Component {
+class Singup extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -42,6 +42,7 @@ class Login extends Component {
         <View>
           <Text>パスワード</Text>
           <TextInput
+            secureTextEntry
             onChangeText={password => this.setState({password})}
             value={this.state.password}
             placeholder="パスワードを入力してください"
@@ -57,4 +58,4 @@ class Login extends Component {
   }
 }
 
-export default Login;
+export default Singup;
