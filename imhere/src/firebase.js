@@ -8,6 +8,7 @@ export const signup = (email, password) => {
     .then(user => {
       if (user) {
         console.log('Success to Signup');
+        alert('SignUp Success!');
       }
     })
     .catch(error => {
