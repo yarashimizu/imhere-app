@@ -1,6 +1,5 @@
 /**
  * @format
- * アプリケーションのルート
  */
 
 import {AppRegistry} from 'react-native';
